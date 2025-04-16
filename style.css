@@ -1,0 +1,36 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #2f3e46;
+}
+header {
+    background: linear-gradient(to right, #a6e3e9, #fbc687);
+    padding: 2rem;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+.intro {
+    text-align: center;
+    padding: 2rem;
+}
+.intro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 1rem;
+}
+footer {
+    background-color: #d1e8ff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
