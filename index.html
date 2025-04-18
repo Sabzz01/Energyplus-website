@@ -1,22 +1,102 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Energy+</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy+ | Expert en Froid, Climatisation & PAC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; background-color: #f5f9fc; color: #1e1e1e; line-height: 1.6; }
+    header { background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover; color: white; text-align: center; padding: 80px 20px; }
+    header h1 { font-size: 3rem; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; }
+    nav { background: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 1rem 2rem; text-align: center; }
+    nav a { margin: 0 15px; color: #1e1e1e; text-decoration: none; font-weight: bold; }
+    section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+    .service { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.05); text-align: center; }
+    .service img { max-width: 100%; border-radius: 8px; margin-bottom: 15px; }
+    .cta { text-align: center; margin-top: 40px; }
+    .cta a { background: #0077cc; color: white; padding: 15px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; }
+    footer { background: #1e1e1e; color: white; padding: 40px 20px; text-align: center; }
+    footer a { color: #ffffff; text-decoration: underline; }
+    form { max-width: 500px; margin: 40px auto; background: #ffffff; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+    form input, form textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; }
+    form button { background: #0077cc; color: white; border: none; padding: 12px 25px; border-radius: 4px; font-weight: bold; cursor: pointer; }
+    form button:hover { background: #005fa3; }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Bienvenue chez Energy+</h1>
-        <p>Climatisation – Pompes à chaleur – Froid professionnel</p>
-    </header>
-    <section class="intro">
-        <img src="assets/air-fresh.jpg" alt="Air pur">
-        <p>Des solutions de confort thermique durables et performantes, au service de la transition énergétique.</p>
-    </section>
-    <footer>
-        <p>60 rue François 1er, 75008 Paris – 06 41 56 03 63 – energyplusparis@gmail.com</p>
-    </footer>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#services">Nos services</a>
+    <a href="#engagements">Engagements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header id="accueil">
+    <h1>Energy+</h1>
+    <p>Froid, Climatisation, Pompes à chaleur – Pro & Éco-responsable</p>
+  </header>
+
+  <section id="services">
+    <h2 style="text-align:center;margin-bottom:40px;">Nos Services</h2>
+    <div class="services">
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1607860211444-7f6dabe4f0d0?auto=format&fit=crop&w=800&q=80" alt="Climatisation moderne">
+        <h3>Climatisation</h3>
+        <p>Installation et entretien de systèmes de clim pour particuliers et professionnels.</p>
+      </div>
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80" alt="Pompe à chaleur en extérieur">
+        <h3>Pompes à chaleur</h3>
+        <p>Solutions performantes et économiques pour chauffer ou rafraîchir efficacement.</p>
+      </div>
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1635265488258-5b9dc45d75ed?auto=format&fit=crop&w=800&q=80" alt="Chambre froide">
+        <h3>Froid commercial</h3>
+        <p>Chambres froides, vitrines réfrigérées, solutions sur mesure pour vos besoins pros.</p>
+      </div>
+    </div>
+    <div class="cta">
+      <a href="#contact">Demandez votre devis gratuit</a>
+    </div>
+  </section>
+
+  <section id="engagements">
+    <h2 style="text-align:center;margin-bottom:30px;">Nos engagements</h2>
+    <ul style="max-width:700px;margin:auto;list-style:none;line-height:2;font-size:1.1rem;">
+      <li>✅ Matériel 100% fabriqué en France</li>
+      <li>✅ Installateurs certifiés RGE</li>
+      <li>✅ Suivi SAV réactif et personnalisé</li>
+      <li>✅ Respect des normes environnementales</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2 style="text-align:center;margin-bottom:30px;">Contactez-nous</h2>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p><strong>Energy+</strong><br>60 rue François 1er, 75008 Paris<br>📞 06 41 56 03 63<br>📧 <a href="mailto:energyplusparis@gmail.com">energyplusparis@gmail.com</a></p>
+    <p style="margin-top:20px;font-size:0.9rem;">&copy; 2025 Energy+ – Tous droits réservés</p>
+  </footer>
 </body>
 </html>
+:wq
+lsgit add index.html
+git commit -m "Mise à jour visuelle et formulaire contact"
+git push origin main
+git add .
+git commit -m "Forcer la mise à jour visuelle"
+git push origin main
+
+²
