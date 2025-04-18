@@ -3,20 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Energy+ | Expert en Froid, Climatisation & PAC</title>
+  <title>Energy+ | Installateur en Climatisation, Froid & Pompe à Chaleur</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1684/1684375.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Installation, dépannage et maintenance de climatisations, pompes à chaleur et équipements frigorifiques à Paris et en Île-de-France.">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Roboto', sans-serif; background-color: #f5f9fc; color: #1e1e1e; line-height: 1.6; }
-    header { background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover; color: white; text-align: center; padding: 80px 20px; }
+    body { font-family: 'Roboto', sans-serif; background-color: #f8fafd; color: #1e1e1e; line-height: 1.6; }
+    header { background: linear-gradient(to right, #0077cc, #00c0ff); color: white; text-align: center; padding: 80px 20px; }
     header h1 { font-size: 3rem; margin-bottom: 10px; }
     header p { font-size: 1.2rem; }
-    nav { background: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 1rem 2rem; text-align: center; }
-    nav a { margin: 0 15px; color: #1e1e1e; text-decoration: none; font-weight: bold; }
+    nav { background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 1rem 2rem; text-align: center; position: sticky; top: 0; z-index: 1000; }
+    nav a { margin: 0 15px; color: #0077cc; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
     section { padding: 60px 20px; max-width: 1100px; margin: auto; }
-    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
-    .service { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.05); text-align: center; }
-    .service img { max-width: 100%; border-radius: 8px; margin-bottom: 15px; }
+    .services, .etapes { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+    .bloc { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.05); text-align: center; }
+    .bloc img { max-width: 100%; border-radius: 8px; margin-bottom: 15px; height: 180px; object-fit: cover; }
     .cta { text-align: center; margin-top: 40px; }
     .cta a { background: #0077cc; color: white; padding: 15px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; }
     footer { background: #1e1e1e; color: white; padding: 40px 20px; text-align: center; }
@@ -29,49 +32,61 @@
 </head>
 <body>
   <nav>
-    <a href="#accueil">Accueil</a>
-    <a href="#services">Nos services</a>
-    <a href="#engagements">Engagements</a>
+    <a href="#climatisation">Climatisation</a>
+    <a href="#pac">Pompes à chaleur</a>
+    <a href="#froid">Froid commercial</a>
+    <a href="#accompagnement">Accompagnement</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <header id="accueil">
-    <h1>Energy+</h1>
-    <p>Froid, Climatisation, Pompes à chaleur – Pro & Éco-responsable</p>
+    <h1>Bienvenue chez Energy+</h1>
+    <p>Installateur certifié RGE en climatisation, pompe à chaleur et froid professionnel</p>
   </header>
 
   <section id="services">
-    <h2 style="text-align:center;margin-bottom:40px;">Nos Services</h2>
+    <h2 style="text-align:center;margin-bottom:40px;">Nos services</h2>
     <div class="services">
-      <div class="service">
-        <img src="https://images.unsplash.com/photo-1607860211444-7f6dabe4f0d0?auto=format&fit=crop&w=800&q=80" alt="Climatisation moderne">
+      <div class="bloc" id="climatisation">
+        <img src="https://images.unsplash.com/photo-1581090700227-1f9a2b7e2d6b?auto=format&fit=crop&w=800&q=80" alt="Installation climatisation">
         <h3>Climatisation</h3>
-        <p>Installation et entretien de systèmes de clim pour particuliers et professionnels.</p>
+        <p>Pose de climatiseurs monosplit, multisplit, VRV/DRV, gainables. Entretien et dépannage toutes marques.</p>
       </div>
-      <div class="service">
-        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80" alt="Pompe à chaleur en extérieur">
+      <div class="bloc" id="pac">
+        <img src="https://images.unsplash.com/photo-1614436167653-3da20b3b9cc1?auto=format&fit=crop&w=800&q=80" alt="Pompe à chaleur air/eau">
         <h3>Pompes à chaleur</h3>
-        <p>Solutions performantes et économiques pour chauffer ou rafraîchir efficacement.</p>
+        <p>Installation de PAC air/eau, air/air, hybrides. Rendement élevé et confort toute saison.</p>
       </div>
-      <div class="service">
+      <div class="bloc" id="froid">
         <img src="https://images.unsplash.com/photo-1635265488258-5b9dc45d75ed?auto=format&fit=crop&w=800&q=80" alt="Chambre froide">
         <h3>Froid commercial</h3>
-        <p>Chambres froides, vitrines réfrigérées, solutions sur mesure pour vos besoins pros.</p>
+        <p>Conception de chambres froides, vitrines réfrigérées, solutions sur-mesure pour professionnels.</p>
       </div>
     </div>
     <div class="cta">
-      <a href="#contact">Demandez votre devis gratuit</a>
+      <a href="#contact">📩 Demandez votre devis gratuit</a>
     </div>
   </section>
 
-  <section id="engagements">
-    <h2 style="text-align:center;margin-bottom:30px;">Nos engagements</h2>
-    <ul style="max-width:700px;margin:auto;list-style:none;line-height:2;font-size:1.1rem;">
-      <li>✅ Matériel 100% fabriqué en France</li>
-      <li>✅ Installateurs certifiés RGE</li>
-      <li>✅ Suivi SAV réactif et personnalisé</li>
-      <li>✅ Respect des normes environnementales</li>
-    </ul>
+  <section id="accompagnement">
+    <h2 style="text-align:center;margin-bottom:40px;">Notre accompagnement</h2>
+    <div class="etapes">
+      <div class="bloc">
+        <img src="https://images.unsplash.com/photo-1581091870627-1faaa36e5c04?auto=format&fit=crop&w=800&q=80" alt="Audit énergétique">
+        <h3>Conseil & audit</h3>
+        <p>Visite technique gratuite, conseils sur les aides financières, devis détaillé et adapté.</p>
+      </div>
+      <div class="bloc">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Installation sur site">
+        <h3>Installation professionnelle</h3>
+        <p>Pose conforme aux normes, mise en service, explications claires pour une prise en main facile.</p>
+      </div>
+      <div class="bloc">
+        <img src="https://images.unsplash.com/photo-1615996001378-357dd78af7a5?auto=format&fit=crop&w=800&q=80" alt="Suivi SAV">
+        <h3>Suivi et SAV</h3>
+        <p>Contrats d’entretien, hotline réactive, interventions sous 48h en cas de panne.</p>
+      </div>
+    </div>
   </section>
 
   <section id="contact">
@@ -91,12 +106,3 @@
   </footer>
 </body>
 </html>
-:wq
-lsgit add index.html
-git commit -m "Mise à jour visuelle et formulaire contact"
-git push origin main
-git add .
-git commit -m "Forcer la mise à jour visuelle"
-git push origin main
-
-²
